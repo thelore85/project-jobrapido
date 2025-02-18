@@ -85,7 +85,7 @@ export default function FormSerch() {
   return (
     <section className="flex justify-center min-h-[85dvh]">
       <div className="container relative">
-        <form onSubmit={handleSubmit} className="w-full flex z-100 relative mt-36">
+        <form onSubmit={handleSubmit} className="w-full flex z-100 relative mt-20">
           <input
             id="formInput"
             value={inputForm}
