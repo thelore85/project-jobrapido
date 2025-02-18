@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #626262;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #53f280;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #53f280;
+  }
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+/* CSS ANIMATION  */
+/* /////////////////////////// */
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-anime {
+  background: linear-gradient(45deg, #ffff00, #ffe100, #00e8c1, #dbdbdb);
+  background-size: 400% 400%; /* Aggiungi un background-size per consentire il movimento del gradiente */
+  animation: gradientAnimation 14s ease infinite;
+  -webkit-animation: gradientAnimation 14s ease infinite; /* Prefisso per WebKit */
+  -moz-animation: gradientAnimation 14s ease infinite; /* Prefisso per Mozilla */
+}
+
+.container {
+  /* padding: 1rem, 1rem, 1rem, 100px; */
+  max-width: 1000px;
+  padding: 1rem;
+}
