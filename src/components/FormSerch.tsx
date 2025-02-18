@@ -38,7 +38,7 @@ export default function FormSerch() {
       const filteredList = data.slice(0, 20)
       setLoading(false)
       setResponseArray(filteredList)
-      if (data.length) {
+      if (data.length <= 0) {
         setNoContentFoundMessage(true)
       }
     } else {
